@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRD Summit Melbourne</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <!-- <div class="navigation-links-parent">
+
+    </div> -->
+    <header class="container-fluid">
+        <div class="header-nav-wrapper container d-flex">
+            <div class="navbar-brand d-grid">
+                <picture>
+                    <img src="/assets/images/HRSM23-Reverse.png" alt="HRD Summit Logo Image">
+                </picture>
+            </div>
+            <!-- navigation on large view -->
+            <nav class="navbar navbar-light ms-auto gap-4 d-hide-on-sm">
+                <ul class="navbar-nav flex-row gap-4 ">
+                    <li class="nav-item"><a href="#" class="nav-link">Agenda</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Speakers</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sponsors</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Get In Touch</a></li>
+                </ul>
+                <div class="reg-cta-btn">
+                    <a href="#">Register Now</a>
+                </div>
+            </nav>
+
+            <!-- show on small devices -->
+            <div class="mobile-menu-wrapper">
+                <label class="hamburger-menu">
+                    <input type="checkbox" id="mobileHamburgerMenu">
+                </label>
+            </div>
+
+
+        </div>
+    </header>
+    <main>
+        <section class="container" style="height: 100dvh;">
+            <h1>HR Summit Melbourne | HRD </h1>
+            <h2>Hero Section Here </h2>
+        </section>
+    </main>
+    <!-- boostrap 5 scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        const headerScrolledSticky = document.querySelector('header.container-fluid')
+
+        window.addEventListener("scroll", () => {
+            let scrollDown = window.scrollY
+            if (scrollDown >= 5) {
+                headerScrolledSticky.classList.add('scrolled')
+            }
+            else if (scrollDown <= 5) {
+                headerScrolledSticky.classList.remove('scrolled')
+            }
+        });
+    </script>
+</body>
+
+</html>
