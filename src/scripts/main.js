@@ -2,6 +2,7 @@
 document.addEventListener("readystatechange", (e) => {
   if (e.target.readyState === "complete") {
     // call function here below
+    callStickyNavBarFunction();
   }
 });
 
@@ -16,4 +17,9 @@ const callStickyNavBarFunction = () => {
       headerScrolledSticky.classList.remove("scrolled");
     }
   });
+};
+
+const callHamburgerMenuReveal = () => {
+  // TODO:
+  /* Event Listener for the button to hide and show menu */
 };

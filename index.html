@@ -23,7 +23,7 @@
         <div class="header-nav-wrapper container d-flex">
             <div class="navbar-brand d-grid">
                 <picture>
-                    <img src="/assets/images/HRSM23-Reverse.png" alt="HRD Summit Logo Image">
+                    <img src="/src/assets/images/HRSM23-Reverse.png" alt="HRD Summit Logo Image">
                 </picture>
             </div>
             <!-- navigation on large view -->
@@ -39,22 +39,44 @@
                 </div>
             </nav>
 
-            <!-- show on small devices -->
-            <div class="mobile-menu-wrapper">
-                <label class="hamburger-menu">
-                    <input type="checkbox" id="mobileHamburgerMenu">
-                </label>
+            <!-- Event Partner or Sponsors -->
+            <div class="event-partner-logo-container">
+                <span>Event Partner</span>
+                <picture>
+                    <img src="/src/assets/images/HRSM22-Sponsor-Reward-Gateway-260x120-1.webp" alt="">
+                </picture>
             </div>
 
+            <!-- show on small devices -->
+            <div class="mobile-menu-wrapper">
+                <button aria-label="Open Navigation" tabindex="0" class="nav-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 45 25" aria-hidden="true"
+                        class="nav-toggle__svg nav-toggle__svg--menu">
+                        <path d="M0 .5h45"></path>
+                        <path d="M0 12.5h45"></path>
+                        <path d="M0 24.5h45"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 26" aria-hidden="true"
+                        class="nav-toggle__svg nav-toggle__svg--close">
+                        <path d="M24.293 1.354.716 24.931"></path>
+                        <path d="m.354.646 23.577 23.578"></path>
+                    </svg>
+                </button>
+            </div>
 
         </div>
     </header>
+
     <main>
-        <section class="container" style="height: 100dvh;">
+        <section class="container d-grid"
+            style="height: 100dvh; place-content: center; background-color: #1e214b;color:white">
             <h1>HR Summit Melbourne | HRD </h1>
             <h2>Hero Section Here </h2>
         </section>
     </main>
+    <footer>
+        <!-- footer element here -->
+    </footer>
     <!-- boostrap 5 scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
