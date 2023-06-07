@@ -18,48 +18,50 @@
 <body>
 
     <header class="container-fluid">
-        <div class="header-nav-wrapper container d-flex">
-            <div class="navbar-brand d-grid">
+        <div class="header-nav-wrapper container">
+            <div class="navbar-brand logo-wrapper">
                 <picture>
                     <img src="/src/assets/images/HRSM23-Reverse.png" alt="HRD Summit Logo Image">
                 </picture>
             </div>
-            <!-- navigation on large view -->
-            <nav class="navbar navbar-light ms-auto gap-4 d-hide-on-sm">
-                <ul class="navbar-nav flex-row gap-4 ">
-                    <li class="nav-item"><a href="#" class="nav-link">Agenda</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Speakers</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sponsors</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Get In Touch</a></li>
-                </ul>
-                <div class="reg-cta-btn">
-                    <a href="#">Register Now</a>
+            <div class="nav-sponsor-wrapper">
+                <!-- navigation on large view -->
+                <nav class="navbar navbar-light ms-auto gap-4 d-hide-on-sm">
+                    <ul class="navbar-nav flex-row gap-4 ">
+                        <li class="nav-item"><a href="#" class="nav-link">Agenda</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Speakers</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sponsors</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Get In Touch</a></li>
+                    </ul>
+                    <div class="reg-cta-btn">
+                        <a href="#">Register Now</a>
+                    </div>
+                </nav>
+
+                <!-- Event Partner or Sponsors -->
+                <div class="event-partner-logo-container">
+                    <span>Event Partner</span>
+                    <picture>
+                        <img src="/src/assets/images/HRSM22-Sponsor-Reward-Gateway-260x120-1.webp" alt="">
+                    </picture>
                 </div>
-            </nav>
 
-            <!-- Event Partner or Sponsors -->
-            <div class="event-partner-logo-container">
-                <span>Event Partner</span>
-                <picture>
-                    <img src="/src/assets/images/HRSM22-Sponsor-Reward-Gateway-260x120-1.webp" alt="">
-                </picture>
-            </div>
-
-            <!-- show on small devices -->
-            <div class="mobile-menu-wrapper">
-                <button aria-label="Open Navigation" tabindex="0" class="nav-toggle" id="openCloseMobileNav">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 45 25" aria-hidden="true"
-                        class="nav-toggle__svg nav-toggle__svg--menu">
-                        <path d="M0 .5h45"></path>
-                        <path d="M0 12.5h45"></path>
-                        <path d="M0 24.5h45"></path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 26" aria-hidden="true"
-                        class="nav-toggle__svg nav-toggle__svg--close">
-                        <path d="M24.293 1.354.716 24.931"></path>
-                        <path d="m.354.646 23.577 23.578"></path>
-                    </svg>
-                </button>
+                <!-- show on small devices -->
+                <div class="mobile-menu-wrapper d-lg-none">
+                    <button aria-label="Open Navigation" tabindex="0" class="nav-toggle" id="openCloseMobileNav">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 45 25" aria-hidden="true"
+                            class="nav-toggle__svg nav-toggle__svg--menu">
+                            <path d="M0 .5h45"></path>
+                            <path d="M0 12.5h45"></path>
+                            <path d="M0 24.5h45"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 26" aria-hidden="true"
+                            class="nav-toggle__svg nav-toggle__svg--close">
+                            <path d="M24.293 1.354.716 24.931"></path>
+                            <path d="m.354.646 23.577 23.578"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
         <!-- mobile menu nav links -->

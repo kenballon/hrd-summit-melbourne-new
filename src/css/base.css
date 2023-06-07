@@ -97,11 +97,20 @@ select {
     width: 161px;
     height: 49px;
 
-    background: #1d064b;
+    background-color: #1d064b;
     border-radius: 50px;
+    cursor: pointer;
 
     >a {
         color: white;
         text-decoration: none;
+    }
+
+    &:hover {
+        background-color: #A47CF4;
+
+        >a {
+            color: #1d064b;
+        }
     }
 }

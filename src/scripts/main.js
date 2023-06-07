@@ -21,7 +21,6 @@ const callStickyNavBarFunction = () => {
 };
 
 const callOpenMobileMenu = () => {
-  // TODO:
   /* Event Listener for the button to hide and show menu */
   const mobileMenuBtn = document.getElementById("openCloseMobileNav");
   const revealMobileMenuNavLinks = document.querySelector(
