@@ -12,12 +12,13 @@
 header.container-fluid {
   height: 108px;
   padding-inline: 0;
+  position: relative;
 }
 header.container-fluid .header-nav-wrapper {
   height: 100%;
   padding-inline: 0;
   display: grid !important;
-  grid-template-columns: 1fr 1fr max-content;
+  grid-template-columns: 1fr 136px max-content;
 }
 header.container-fluid .header-nav-wrapper .navbar-brand,
 header.container-fluid .header-nav-wrapper .event-partner-logo-container {
@@ -33,22 +34,6 @@ header.container-fluid .header-nav-wrapper .event-partner-logo-container picture
 header.container-fluid .header-nav-wrapper .navbar .navbar-nav .nav-item a {
   font-weight: 600;
   color: #2e2b26;
-}
-header.container-fluid .header-nav-wrapper .reg-cta-btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 24px;
-  gap: 8px;
-  width: 161px;
-  height: 49px;
-  background: #1d064b;
-  border-radius: 50px;
-}
-header.container-fluid .header-nav-wrapper .reg-cta-btn a {
-  color: white;
-  text-decoration: none;
 }
 header.container-fluid .header-nav-wrapper .event-partner-logo-container {
   background-color: #e4d7ff;
@@ -85,7 +70,7 @@ header.container-fluid.scrolled {
   transition: stroke-dashoffset 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .mobile-menu-wrapper button.nav-toggle .nav-toggle__svg--menu {
-  height: 2.3rem;
+  height: 1.3rem;
   position: relative;
   width: 4rem;
 }
@@ -102,23 +87,101 @@ header.container-fluid.scrolled {
 .mobile-menu-wrapper button.nav-toggle .nav-toggle__svg--menu path:nth-child(3) {
   transition-delay: 0.7s;
 }
-.mobile-menu-wrapper button.nav-toggle.nav-toggle--close .nav-toggle__svg--close {
-  display: none;
-  height: 2.9rem;
+.mobile-menu-wrapper button.nav-toggle .nav-toggle__svg--close {
+  height: 1.9rem;
   left: 50%;
   margin-left: -1.4rem;
   margin-top: -1.4rem;
   position: absolute;
-  top: 50%;
+  top: 57%;
   width: 2.9rem;
 }
-.mobile-menu-wrapper button.nav-toggle.nav-toggle--close .nav-toggle__svg--close path {
-  stroke-dashoffset: 0;
+.mobile-menu-wrapper button.nav-toggle .nav-toggle__svg--close path {
+  stroke-dashoffset: 34;
   stroke-dasharray: 34;
 }
-.mobile-menu-wrapper button.nav-toggle.nav-toggle--close .nav-toggle__svg--close path:first-child {
+.mobile-menu-wrapper button.nav-toggle--close .nav-toggle__svg--menu path {
+  stroke-dashoffset: 45;
+}
+.mobile-menu-wrapper button.nav-toggle--close .nav-toggle__svg--close path {
+  stroke-dashoffset: 0;
+}
+.mobile-menu-wrapper button.nav-toggle--close .nav-toggle__svg--close path:first-child {
   transition-delay: 0.5s;
 }
-.mobile-menu-wrapper button.nav-toggle.nav-toggle--close .nav-toggle__svg--close path:nth-child(2) {
+.mobile-menu-wrapper button.nav-toggle--close .nav-toggle__svg--close path:nth-child(2) {
   transition-delay: 0.6s;
+}
+
+.navigation-links-parent {
+  display: none;
+  position: fixed;
+  width: 100svw;
+  height: 90svh;
+  top: 108px;
+  left: 0;
+  background-color: rgba(29, 6, 75, 0.862745098);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.navigation-links-parent .mobile-menu-container {
+  position: relative;
+  background-color: white;
+  width: 90svw;
+  height: 100%;
+  max-height: 450px;
+  margin-inline: auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 4px;
+}
+.navigation-links-parent .mobile-menu-container ul.navbar-nav {
+  height: 100%;
+}
+.navigation-links-parent .mobile-menu-container ul.navbar-nav li.nav-item {
+  text-align: center;
+}
+.navigation-links-parent .mobile-menu-container ul.navbar-nav li.nav-item a {
+  color: #2e2b26;
+  font-weight: 600;
+}
+.navigation-links-parent .mobile-menu-container ul.navbar-nav li.nav-item .reg-cta-btn {
+  margin-inline: auto;
+}
+.navigation-links-parent .mobile-menu-container ul.navbar-nav li.nav-item .reg-cta-btn a {
+  color: white;
+}
+.navigation-links-parent .mobile-menu-container ul.navbar-nav li.nav-item:last-child {
+  margin-top: auto;
+}
+
+.navigation-links-parent.show-mobile-menu {
+  display: flex;
+}
+.navigation-links-parent.show-mobile-menu .mobile-menu-container {
+  animation: mobileMenuRevealAnime 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.navigation-links-parent.fade-out-animate .mobile-menu-container {
+  animation: mobileMenuHideAnime 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes mobileMenuRevealAnime {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes mobileMenuHideAnime {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+body.fixed-modal-reveal {
+  overflow: hidden;
 }/*# sourceMappingURL=ken-styles.css.map */
