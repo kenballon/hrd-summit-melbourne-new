@@ -110,6 +110,7 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
 /* #endregion LENIS SMOOTH SCROLLING CSS*/
 
 /* #region HEADER NAVIGATION CSS STYLING */
@@ -216,8 +217,7 @@ header.header {
 .mobile-menu-wrapper {
   height: 100%;
 
-  @media (min-width: 300px) {
-  }
+  @media (min-width: 300px) {}
 
   @media (min-width: 1200px) {
     display: none;
@@ -477,11 +477,9 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.28895308123249297) 100%
-    );
+    background: linear-gradient(0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.28895308123249297) 100%);
   }
 
   .hero__inner-div-wrapper {
@@ -599,7 +597,7 @@ main {
   z-index: 2;
   justify-content: center;
 
-  & > div {
+  &>div {
     width: 90%;
     justify-content: space-between;
   }
@@ -651,7 +649,7 @@ main {
   display: none;
   position: relative;
 
-  & > div {
+  &>div {
     position: relative;
     height: 100%;
   }
@@ -876,7 +874,7 @@ main {
         }
       }
 
-      & > div:first-child {
+      &>div:first-child {
         height: 100%;
       }
     }
@@ -889,7 +887,7 @@ main {
   }
 
   .announce__img-wrapper.ui-block-component {
-    & > div {
+    &>div {
       width: 100%;
       justify-content: space-around !important;
       gap: 0 !important;
@@ -1042,7 +1040,7 @@ main {
     @media (min-width: 300px) and (max-width: 767px) {
       transform: translateY(3.7rem);
 
-      & > div:first-child {
+      &>div:first-child {
         display: block !important;
 
         & h3 {
@@ -1050,7 +1048,7 @@ main {
           width: 100%;
         }
 
-        & > img {
+        &>img {
           width: 50px;
         }
       }
@@ -1062,7 +1060,7 @@ main {
   }
 
   .leading-expert__speaker-card .speaker-card-div-wrapper {
-    & > img:hover {
+    &>img:hover {
       transform: scale(2px);
     }
   }
@@ -1070,7 +1068,7 @@ main {
   @media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
     padding: 3rem 1rem;
 
-    & > div {
+    &>div {
       padding: 0;
     }
   }
@@ -1078,7 +1076,7 @@ main {
   @media (min-width: 300px) and (max-width: 760px) {
     padding-inline: 24px;
 
-    & > div {
+    &>div {
       padding: 0;
     }
   }
@@ -1445,11 +1443,9 @@ main {
           bottom: 0;
           left: 0;
           right: 0;
-          background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.15) 0%,
-            rgba(0, 0, 0, 0.9) 63.02%
-          );
+          background: linear-gradient(180deg,
+              rgba(0, 0, 0, 0.15) 0%,
+              rgba(0, 0, 0, 0.9) 63.02%);
           z-index: 1;
         }
 
@@ -1579,6 +1575,7 @@ main {
     }
 
     & table {
+
       .day1-lbl,
       .date1-lbl {
         @media (max-width: 991.85px) {
@@ -2001,7 +1998,7 @@ main {
             width: 100%;
           }
 
-          .gallery-slides__item > div {
+          .gallery-slides__item>div {
             width: 100%;
           }
 
@@ -2265,7 +2262,7 @@ footer {
   cursor: pointer;
 }
 
-.cookie .front__buttons button + button {
+.cookie .front__buttons button+button {
   margin-left: 20px;
 }
 
@@ -2387,7 +2384,7 @@ footer {
   display: none;
 }
 
-.custom_checkbox input:checked + span::before {
+.custom_checkbox input:checked+span::before {
   left: 32px;
   -webkit-transition-duration: 350ms;
   transition-duration: 350ms;
@@ -2591,7 +2588,7 @@ footer {
   color: var(--primary-shades-500);
 }
 
-#popupModalRegInterest .form-wrapper form > div:first-child {
+#popupModalRegInterest .form-wrapper form>div:first-child {
   max-width: 400px;
 }
 
@@ -2600,9 +2597,7 @@ footer {
   border-radius: initial;
 }
 
-#popupModalRegInterest
-  .reg-interest-wrapper
-  input[type="email"]:focus::-webkit-input-placeholder {
+#popupModalRegInterest .reg-interest-wrapper input[type="email"]:focus::-webkit-input-placeholder {
   opacity: 0;
 }
 
@@ -2772,3 +2767,7 @@ footer {
 }
 
 /* #endregion Become a Sponsor CSS Styling */
+
+.all-popup-modal-container .popup-modal.show .modal-dialog {
+  margin-right: auto;
+}
