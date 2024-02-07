@@ -10,11 +10,11 @@ document.addEventListener("readystatechange", (e) => {
 
     pageScrollZoom();
     backToTopButton();
-    showPopup(
-      "popupModalRegInterest",
-      "show",
-      "#popupModalRegInterest .popup-btn-close"
-    );
+    // showPopup(
+    //   "popupModalRegInterest",
+    //   "show",
+    //   "#popupModalRegInterest .popup-btn-close"
+    // );
     // captureColor();
 
     pageSmoothScrolling();

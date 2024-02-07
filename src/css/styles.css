@@ -2771,3 +2771,60 @@ footer {
 .all-popup-modal-container .popup-modal.show .modal-dialog {
   margin-right: auto;
 }
+
+/* #region NEW ANNOUNCEMENT SECTION */
+.new_announcement {
+  position: relative;
+  background-color: var(--text-color-shade-800);
+  /* min-height: 100vh; */
+  color: white;
+  padding-block: 80px;
+
+  .container {
+    max-width: 1500px !important;
+  }
+
+  .content_announcement_wrapper {
+    display: flex;
+
+    .announcement_col {
+      width: 50%;
+
+      .section-heading-label {
+        font-size: 48px;
+      }
+    }
+
+    .left_col {
+      position: sticky;
+      top: 4rem;
+      height: max-content;
+
+      .content_item {
+        margin-top: 5rem;
+        width: 80%;
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+      }
+    }
+
+    .announce_ul {
+      position: relative;
+
+      .announce_li_item {
+        padding-block: 1.25rem;
+        border-block: 1px solid white;
+
+        & h3 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
+
+/* #endregion NEW ANNOUNCEMENT SECTION */
