@@ -2812,6 +2812,10 @@ footer {
       }
     }
 
+    .right_col {
+      margin-top: 10rem;
+    }
+
     .announce_ul {
       position: relative;
 
@@ -2820,7 +2824,8 @@ footer {
         border-block: 1px solid white;
 
         & h3 {
-          font-size: 48px;
+          font-size: 40px;
+          font-weight: 400;
         }
       }
     }
