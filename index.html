@@ -254,7 +254,7 @@
             </div>
         </section>
         <!-- announcement section -->
-        <section class="announcement-section">
+        <section class="announcement-section d-none">
             <div class="container py-7">
                 <h2 class="section-heading-label display-5 text-white fw-bold text-center">Announcement</h2>
                 <div class="announcement-slider-parent d-flex align-items-center justify-content-center">
@@ -532,14 +532,74 @@
                 <div class="content_announcement_wrapper">
                     <div class="announcement_col left_col">
                         <h2 class="section-heading-label">Announcement</h2>
-                        <div class="content_item position-relative d-flex flex-column h-100">
-                            <div class="inner_content_item mt-9">
+                        <div class="content_item position-relative d-flex flex-column h-100 tab-content ">
+                            <div class="inner_content_item mt-9 active show" id="announcement_1">
                                 <div class="img_wrapper">
                                     <picture>
-                                        <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100">
+                                        <img src="https://stgriacnnctny.wpenginepowered.com/wp-content/uploads/2024/01/register-card-1-2024.png"
+                                            alt="asdfsdf" width="100">
                                     </picture>
                                 </div>
-                                <div class="content_item_blurb">
+                                <div class="content_item_blurb py-4">
+                                    <p class="fw-light text-uppercase fs-16-responsive">Book your advisor ticket for
+                                        only
+                                        $99. Why not bring your team? Get two free passes when you book 10.</p>
+                                </div>
+                                <div class="content_item_cta_wrapper">
+                                    <div class="cta-wrapper d-flex gap-3 flex-wrap">
+                                        <a href="#" class="btn btn-primary cta-primary btn-hero-primary"
+                                            data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner_content_item mt-9" id="announcement_2">
+                                <div class="img_wrapper">
+                                    <picture>
+                                        <img src="/src/assets/images/2.jpg" alt="asdfsdf" width="100">
+                                    </picture>
+                                </div>
+                                <div class="content_item_blurb py-4">
+                                    <p class="fw-light text-uppercase fs-16-responsive">We’re pleased to confirm that
+                                        Sola Kitchens, a London-based luxury bespoke
+                                        kitchen
+                                        brand, has appointed Six to produce
+                                        its new website. Sola Kitchens stands out as the sole company in the UK,
+                                        providing
+                                        truly bespoke Scandinavian kitchens,
+                                        meticulously crafted in workshops in Sweden and Denmark.</p>
+                                </div>
+                                <div class="content_item_cta_wrapper">
+                                    <div class="cta-wrapper d-flex gap-3 flex-wrap">
+                                        <a href="#" class="btn btn-primary cta-primary btn-hero-primary"
+                                            data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner_content_item mt-9" id="announcement_3">
+                                <div class="img_wrapper">
+                                    <picture>
+                                        <img src="/src/assets/images/3.jpg" alt="asdfsdf" width="100">
+                                    </picture>
+                                </div>
+                                <div class="content_item_blurb py-4">
+                                    <p class="fw-light text-uppercase fs-16-responsive">Book your advisor ticket for
+                                        only
+                                        $99. Why not bring your team? Get two free passes when you book 10.</p>
+                                </div>
+                                <div class="content_item_cta_wrapper">
+                                    <div class="cta-wrapper d-flex gap-3 flex-wrap">
+                                        <a href="#" class="btn btn-primary cta-primary btn-hero-primary"
+                                            data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner_content_item mt-9" id="announcement_4">
+                                <div class="img_wrapper">
+                                    <picture>
+                                        <img src="/src/assets/images/4.jpg" alt="asdfsdf" width="100">
+                                    </picture>
+                                </div>
+                                <div class="content_item_blurb py-4">
                                     <p>We’re pleased to confirm that Sola Kitchens, a London-based luxury bespoke
                                         kitchen
                                         brand, has appointed Six to produce
@@ -557,47 +617,188 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="announcement_col right_col">
                         <ul class="announce_ul">
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Sola Kitchens appoint Six</h3>
+                            <li class="announce_li_item active_item" data-open-target="#announcement_1">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>Announcing 2024 Keynote Speaker</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Chaminade Partners with Six for site refresh</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_2">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>RIA Connect Event</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Site launched for new boutique hotel and gallery, IZZA</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_3">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>Announcing 2024 Keynote Speaker</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Our case study for Fellowship is now online</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_4">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>RIA Connect Event</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Capturing quiet moments with Cat Garcia</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_5">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>Announcing 2024 Keynote Speaker</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Sola Kitchens appoint Six</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_6">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>RIA Connect Event</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Chaminade Partners with Six for site refresh</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_7">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>Announcing 2024 Keynote Speaker</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Site launched for new boutique hotel and gallery, IZZA</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_8">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>RIA Connect Event</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Our case study for Fellowship is now online</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_9">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>Announcing 2024 Keynote Speaker</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
-                            <li class="announce_li_item">
-                                <span>Date: APR 26, 2024 </span>
-                                <h3>Capturing quiet moments with Cat Garcia</h3>
+                            <li class="announce_li_item" data-open-target="#announcement_10">
+                                <details>
+                                    <summary>
+                                        <span>Date: APR 26, 2024 </span>
+                                        <h3>RIA Connect Event</h3>
+                                    </summary>
+                                    <article class="d-lg-none d-md-block">
+                                        <div class="img_wrapper">
+                                            <picture>
+                                                <img src="/src/assets/images/1.jpg" alt="asdfsdf" width="100"
+                                                    style="width: 100%;">
+                                            </picture>
+                                        </div>
+                                        <h4 class="fs-16-responsive fw-light py-3">Book your advisor ticket for only
+                                            $99. Why not bring your team? Get two free passes when you book 10.</h4>
+                                    </article>
+                                </details>
                             </li>
                         </ul>
                     </div>
