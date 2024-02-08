@@ -2802,6 +2802,14 @@ footer {
     .inner_content_item.active.show {
       display: block;
 
+      .img_wrapper {
+        & picture {
+          & img {
+            animation: imageRevealAnimation 1s cubic-bezier(.64, .33, .12, 1.21);
+          }
+        }
+      }
+
       @media (max-width: 991.85px) {
         display: none;
       }
@@ -2822,10 +2830,11 @@ footer {
       & img {
         width: 100%;
         max-width: 540px;
-        height: auto;
+        height: 100%;
         max-height: 405px;
         object-fit: cover;
         aspect-ratio: 4/3;
+        /* animation: imageRevealAnimation 1s cubic-bezier(.64, .33, .12, 1.21); */
       }
     }
 
@@ -2871,6 +2880,16 @@ footer {
       }
 
     }
+  }
+}
+
+@keyframes imageRevealAnimation {
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
   }
 }
 
