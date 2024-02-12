@@ -2838,7 +2838,7 @@ footer {
         max-height: 405px;
         object-fit: cover;
         aspect-ratio: 4/3;
-        /* animation: imageRevealAnimation 1s cubic-bezier(.64, .33, .12, 1.21); */
+        animation: imageRevealAnimation 1s cubic-bezier(.64, .33, .12, 1.21);
       }
     }
 

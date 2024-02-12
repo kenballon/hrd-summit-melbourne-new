@@ -1,28 +1,130 @@
-/* #region APP DOWNLOAD SECTION */
-.app_download_section {
-    background-color: var(--text-color-shade-50);
+.new_announcement {
+    position: relative;
+    background-color: var(--text-color-shade-800);
+    color: white;
+    padding-block: 80px;
+    min-height: calc(100vh - 100px);
 
-    .app_dl_content_wrapper {
-        padding-block: 5rem;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+    .container {
+        max-width: 1500px;
 
-        .app_download_img {
-            padding-right: 1rem;
+        @media (max-width: 992px) {
+            max-width: 960px;
+        }
+    }
 
-            & img {
-                width: 100%;
+    .content_announcement_wrapper {
+        display: flex;
+
+        .announcement_col {
+            width: 50%;
+
+            .section-heading-label {
+                font-size: 48px;
             }
         }
 
-        .app_dl_content_details {
-            .app_dl_imgs_wrapper {
-                & picture img {
-                    max-width: 150px;
+        .inner_content_item {
+            display: none;
+        }
+
+        .inner_content_item.active.show {
+            display: block;
+
+            .img_wrapper {
+                & picture {
+                    & img {
+                        animation: imageRevealAnimation 1s cubic-bezier(.64, .33, .12, 1.21);
+                    }
                 }
             }
+
+            @media (max-width: 991.85px) {
+                display: none;
+            }
+        }
+
+        .left_col {
+            position: sticky;
+            top: 4rem;
+            height: max-content;
+
+
+            .content_item {
+                margin-top: 5rem;
+                width: 80%;
+
+            }
+
+            & img {
+                width: 100%;
+                max-width: 540px;
+                height: 100%;
+                max-height: 405px;
+                object-fit: cover;
+                aspect-ratio: 4/3;
+                animation: imageRevealAnimation 1s cubic-bezier(.64, .33, .12, 1.21);
+            }
+        }
+
+        .right_col {
+            margin-top: 8rem;            
+        }
+
+        .announce_ul {
+            position: relative;
+            padding: 0;
+
+            .announce_li_item {
+                padding-block: 1.25rem;
+                border-block: 1px solid white;
+                padding-inline: 1rem;
+
+                & h3 {
+                    font-size: 32px;
+                    font-weight: 400;
+                }
+
+                &:hover {
+                    background-color: var(--text-color-shade-900);
+                }
+            }
+
+            .announce_li_item.active_item {
+                background-color: var(--primary-shades-500);
+
+                @media (max-width: 991.85px) {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        @media (max-width: 991.85px) {
+            display: block;
+
+            .announcement_col {
+                width: 100%;
+            }
+
+            .left_col {
+                position: unset;
+                margin-top: 5rem;
+            }
+
+            .right_col {
+                width: 100%;
+            }
+
         }
     }
 }
 
-/* #endregion APP DOWNLOAD SECTION */
+@keyframes imageRevealAnimation {
+    0% {
+        clip-path: inset(0 0 100% 0);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}

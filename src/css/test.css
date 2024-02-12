@@ -1,20 +1,111 @@
-/* #region APP DOWNLOAD SECTION */
-.app_download_section {
-  background-color: var(--text-color-shade-50);
+.new_announcement {
+  position: relative;
+  background-color: var(--text-color-shade-800);
+  color: white;
+  padding-block: 80px;
+  min-height: calc(100vh - 100px);
 }
-.app_download_section .app_dl_content_wrapper {
-  padding-block: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.new_announcement .container {
+  max-width: 1500px;
 }
-.app_download_section .app_dl_content_wrapper .app_download_img {
-  padding-right: 1rem;
+@media (max-width: 992px) {
+  .new_announcement .container {
+    max-width: 960px;
+  }
 }
-.app_download_section .app_dl_content_wrapper .app_download_img img {
+.new_announcement .content_announcement_wrapper {
+  display: flex;
+}
+.new_announcement .content_announcement_wrapper .announcement_col {
+  width: 50%;
+}
+.new_announcement .content_announcement_wrapper .announcement_col .section-heading-label {
+  font-size: 48px;
+}
+.new_announcement .content_announcement_wrapper .inner_content_item {
+  display: none;
+}
+.new_announcement .content_announcement_wrapper .inner_content_item.active.show {
+  display: block;
+}
+.new_announcement .content_announcement_wrapper .inner_content_item.active.show .img_wrapper picture img {
+  animation: imageRevealAnimation 1s cubic-bezier(0.64, 0.33, 0.12, 1.21);
+}
+@media (max-width: 991.85px) {
+  .new_announcement .content_announcement_wrapper .inner_content_item.active.show {
+    display: none;
+  }
+}
+.new_announcement .content_announcement_wrapper .left_col {
+  position: sticky;
+  top: 4rem;
+  height: -moz-max-content;
+  height: max-content;
+}
+.new_announcement .content_announcement_wrapper .left_col .content_item {
+  margin-top: 5rem;
+  width: 80%;
+}
+.new_announcement .content_announcement_wrapper .left_col img {
   width: 100%;
+  max-width: 540px;
+  height: 100%;
+  max-height: 405px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 4/3;
+  animation: imageRevealAnimation 1s cubic-bezier(0.64, 0.33, 0.12, 1.21);
 }
-.app_download_section .app_dl_content_wrapper .app_dl_content_details .app_dl_imgs_wrapper picture img {
-  max-width: 150px;
+.new_announcement .content_announcement_wrapper .right_col {
+  margin-top: 8rem;
+}
+.new_announcement .content_announcement_wrapper .announce_ul {
+  position: relative;
+  padding: 0;
+}
+.new_announcement .content_announcement_wrapper .announce_ul .announce_li_item {
+  padding-block: 1.25rem;
+  border-block: 1px solid white;
+  padding-inline: 1rem;
+}
+.new_announcement .content_announcement_wrapper .announce_ul .announce_li_item h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.new_announcement .content_announcement_wrapper .announce_ul .announce_li_item:hover {
+  background-color: var(--text-color-shade-900);
+}
+.new_announcement .content_announcement_wrapper .announce_ul .announce_li_item.active_item {
+  background-color: var(--primary-shades-500);
+}
+@media (max-width: 991.85px) {
+  .new_announcement .content_announcement_wrapper .announce_ul .announce_li_item.active_item {
+    background-color: transparent;
+  }
+}
+@media (max-width: 991.85px) {
+  .new_announcement .content_announcement_wrapper {
+    display: block;
+  }
+  .new_announcement .content_announcement_wrapper .announcement_col {
+    width: 100%;
+  }
+  .new_announcement .content_announcement_wrapper .left_col {
+    position: unset;
+    margin-top: 5rem;
+  }
+  .new_announcement .content_announcement_wrapper .right_col {
+    width: 100%;
+  }
 }
 
-/* #endregion APP DOWNLOAD SECTION *//*# sourceMappingURL=test.css.map */
+@keyframes imageRevealAnimation {
+  0% {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}/*# sourceMappingURL=test.css.map */
