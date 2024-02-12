@@ -2781,7 +2781,11 @@ footer {
   min-height: calc(100vh - 100px);
 
   .container {
-    max-width: 1500px !important;
+    max-width: 1500px;
+
+    @media (max-width: 992px) {
+      max-width: 960px;
+    }
   }
 
   .content_announcement_wrapper {
@@ -2853,13 +2857,21 @@ footer {
         padding-inline: 1rem;
 
         & h3 {
-          font-size: 40px;
+          font-size: 32px;
           font-weight: 400;
+        }
+
+        &:hover {
+          background-color: var(--text-color-shade-900);
         }
       }
 
       .announce_li_item.active_item {
         background-color: var(--primary-shades-500);
+
+        @media (max-width: 991.85px) {
+          background-color: transparent;
+        }
       }
     }
 
@@ -2894,3 +2906,32 @@ footer {
 }
 
 /* #endregion NEW ANNOUNCEMENT SECTION */
+
+/* #region APP DOWNLOAD SECTION */
+.app_download_section {
+  background-color: var(--text-color-shade-50);
+
+  .app_dl_content_wrapper {
+    padding-block: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .app_download_img {
+      padding-right: 1rem;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    .app_dl_content_details {
+      .app_dl_imgs_wrapper {
+        & picture img {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}
+
+/* #endregion APP DOWNLOAD SECTION */

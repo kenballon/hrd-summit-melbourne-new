@@ -1,0 +1,28 @@
+/* #region APP DOWNLOAD SECTION */
+.app_download_section {
+    background-color: var(--text-color-shade-50);
+
+    .app_dl_content_wrapper {
+        padding-block: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        .app_download_img {
+            padding-right: 1rem;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        .app_dl_content_details {
+            .app_dl_imgs_wrapper {
+                & picture img {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+/* #endregion APP DOWNLOAD SECTION */

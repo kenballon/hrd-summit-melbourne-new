@@ -874,15 +874,14 @@ parentSection.addEventListener("mousemove", (e) => {
 
 function newAnnouncement() {
   if (window.innerWidth > 992) {
-    // Select all the li elements
+
     let liItems = document.querySelectorAll('.announce_li_item');
-    // Iterate over each li element
+
     liItems.forEach((item) => {
       // Add click event listener
       item.addEventListener('click', function () {
-        // Get the value of the data-open-target attribute
-        let targetId = this.getAttribute('data-open-target');
 
+        let targetId = this.getAttribute('data-open-target');
 
         // Select the UI element with the matching ID
         let targetElement = document.querySelector(targetId);
@@ -892,9 +891,11 @@ function newAnnouncement() {
           // Find the currently active element
           let activeElement = document.querySelector('.inner_content_item.active.show');
 
+
           // If an active element exists, remove the 'active' and 'show' classes from it
           if (activeElement) {
             activeElement.classList.remove('active', 'show');
+
           }
 
           // Add the 'active' and 'show' classes to the target element
@@ -908,5 +909,19 @@ function newAnnouncement() {
         this.classList.add('active_item');
       });
     });
+
+    liItems.forEach(item => {
+      item.addEventListener('toggle', () => {
+        let targetDetailedOpen = item.open;
+
+        if (targetDetailedOpen) {
+          liItems.forEach((otherDetailsOpened) => {
+            if (otherDetailsOpened !== item && otherDetailsOpened.open) {
+              otherDetailsOpened.open = false;
+            }
+          });
+        }
+      })
+    })
   }
 }
